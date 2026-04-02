@@ -50,7 +50,7 @@ export default function Nav() {
           href="#contact"
           className="px-4 py-2 bg-[#2D7B69] text-white text-sm font-semibold rounded-lg hover:bg-[#245F52] transition-colors"
         >
-          Hire Me →
+          Let's Talk →
         </a>
       </div>
     </nav>
