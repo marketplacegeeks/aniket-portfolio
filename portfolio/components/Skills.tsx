@@ -5,27 +5,27 @@ import { useRef } from "react";
 
 const skills = [
   {
-    category: "AI & LLMs",
+    category: "How I reason with AI",
     icon: "🧠",
     items: ["Claude API", "OpenAI", "RAG Pipelines", "Prompt Engineering", "Evals", "Vector DBs", "Agentic Workflows", "Multi-step Reasoning Chains"],
   },
   {
-    category: "Automation & Agents",
+    category: "How I automate workflows",
     icon: "⚙️",
     items: ["n8n", "Playwright", "Selenium", "Web Scraping at Scale", "Event-driven Pipelines", "AI-to-AI Orchestration"],
   },
   {
-    category: "Backend & Data",
+    category: "How I wire up the backend",
     icon: "🛠️",
     items: ["Python", "Django", "FastAPI", "PostgreSQL", "Supabase", "REST APIs", "PDF Generation", "Document Parsing", "Gmail API"],
   },
   {
-    category: "Frontend & Deployment",
+    category: "How I get it in front of users",
     icon: "💻",
     items: ["React", "Next.js", "Chrome Extensions", "Vercel", "Railway", "Tailwind CSS"],
   },
   {
-    category: "Product",
+    category: "How I decide what to build",
     icon: "📦",
     items: ["0→1 Product Launches", "Marketplace Strategy", "Roadmapping", "GTM", "Stakeholder Management", "Enterprise Delivery"],
   },
@@ -48,7 +48,7 @@ export default function Skills() {
             Skills
           </p>
           <h2 className="font-[family-name:var(--font-playfair)] text-3xl lg:text-4xl font-bold text-[#1A1A1A]">
-            Stack & tooling
+            What I use to build fast
           </h2>
         </motion.div>
 

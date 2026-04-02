@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const stats = [
-  { value: "$15M", label: "Cost Savings" },
-  { value: "104k", label: "visits in first month" },
-  { value: "6 weeks", label: "idea to production" },
+  { value: "$15M", label: "in validated cost savings" },
+  { value: "104k", label: "visits — proved demand in 30 days" },
+  { value: "2–4 wks", label: "from problem to working prototype" },
 ];
 
 export default function Hero() {
@@ -23,7 +23,7 @@ export default function Hero() {
           >
             {/* Role badge */}
             <p className="text-xs font-semibold text-[#2D7B69] uppercase tracking-widest mb-3">
-              AI Product Leader · Builder · Dubai, UAE
+              Product Leader who Builds to Validate · Dubai, UAE
             </p>
 
             {/* Name — Playfair serif like Christina */}
@@ -34,14 +34,15 @@ export default function Hero() {
 
             {/* Tagline */}
             <p className="text-xl lg:text-2xl font-semibold text-[#3D5A50] mb-6">
-              I ship AI systems that actually work in production.
+              I validate ideas by shipping them.
             </p>
 
             {/* Description */}
             <p className="text-lg text-[#6B7A72] leading-relaxed max-w-xl mb-6">
-              I bridge the gap between business problems and production AI
-              systems — combining product thinking, LLMs, and automation to
-              deliver measurable results in 2–4 week cycles.
+              When a team is debating whether an idea will work, I build a
+              prototype that settles the argument. Working products beat slide
+              decks. I&apos;ve been doing this for 10+ years across e-commerce,
+              logistics, and fintech — and now I do it with AI.
             </p>
 
             {/* Stats */}
@@ -89,6 +90,13 @@ export default function Hero() {
                 className="px-6 py-3 bg-white border-2 border-[#C8D8D0] text-[#1A1A1A] font-semibold rounded-lg hover:border-[#2D7B69] hover:text-[#2D7B69] transition-all"
               >
                 ↓ Download CV
+              </a>
+              <a
+                href="/Aniket-Mehare-Portfolio.pdf"
+                download
+                className="px-6 py-3 bg-white border-2 border-[#C8D8D0] text-[#1A1A1A] font-semibold rounded-lg hover:border-[#2D7B69] hover:text-[#2D7B69] transition-all"
+              >
+                ↓ Download Portfolio
               </a>
               <a
                 href="mailto:mehareac@gmail.com"

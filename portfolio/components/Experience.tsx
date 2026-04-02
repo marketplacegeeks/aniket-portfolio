@@ -14,27 +14,27 @@ const experience = [
         title: "AI Builder & Product Manager",
         period: "Aug 2025 – Present",
         bullets: [
-          "Built FleetMind solo — full-stack fleet & asset management system for 600 trucks, shipped in 6 weeks",
-          "Shipped Content Ginie, an AI image generation platform cutting shoot-to-live from 12 → 7 days",
-          "Engineered North Star prototype for Oracle HCM, modernising legacy Redwood UX for accessibility",
-          "Built mini-WMS in 3 weeks to secure Dubai Customs contract; launched Mega DC safety portal via WhatsApp/Telegram automation",
+          "Validated fleet cost visibility in 6 weeks — shipped a working prototype for 600 trucks before the business committed to a full procurement cycle",
+          "Proved AI could replace photoshoots at scale — cut shoot-to-live from 12 → 7 days, freeing studio budget for higher-value SKUs",
+          "Prototyped a new UX direction for Oracle HCM to get leadership alignment before committing developer resources to the Redwood migration",
+          "Shipped a working WMS prototype in 3 weeks to win the Dubai Customs contract; automated the Mega DC safety portal via WhatsApp — no app download required",
         ],
       },
       {
         title: "Product Manager — Marketplace",
         period: "Dec 2023 – Present",
         bullets: [
-          "Product-led GCC marketplace expansion, scaling Dropship & Easy Ship for Centrepoint and Homecentre",
-          "Delivered $15M in cost savings through automated payment settlement and logistics optimisation",
-          "Transformed Viniculum engine into a bespoke seller portal; integrated enterprise partners via API",
+          "Drove the decision to expand GCC marketplace via Dropship & Easy Ship — scaled across Centrepoint and Homecentre without warehouse investment",
+          "$15M in cost savings by automating payment settlement and renegotiating logistics — decisions that paid back within the quarter",
+          "Chose to repurpose the Viniculum engine rather than build from scratch — delivered a bespoke seller portal in weeks and onboarded enterprise partners via API",
         ],
       },
       {
         title: "Product Manager — Mega DC",
         period: "Jun 2024 – Present",
         bullets: [
-          "Streamlined decanting workflows from 14 steps to 6, and cut DEMATIC pick-walk travel time by 14%",
-          "Designed hybrid solutions for manual multi-SKU retrieval in high-density automated warehouse environments",
+          "Redesigned decanting from 14 steps to 6 and cut DEMATIC pick-walk travel time by 14% — changes that compounded across every shift",
+          "Identified the gap between automation and manual work in high-density environments — designed hybrid retrieval workflows that reduced operator friction without modifying the DEMATIC system",
         ],
       },
     ],
@@ -48,16 +48,16 @@ const experience = [
         title: "Product Manager — Marketplace Supply Chain",
         period: "Jan 2023 – Dec 2023",
         bullets: [
-          "Led slotted delivery launch for SmartBazaar across 3,100+ stores and enabled Self-Ship for bulky products, unlocking ₹20 Cr in revenue",
-          "Implemented doorstep pickup quality checks, reducing seller mismatch claims by 18%",
+          "Identified slotted delivery as the missing unlock for SmartBazaar — launched across 3,100+ stores and enabled Self-Ship for bulky products, adding ₹20 Cr in revenue",
+          "Closed the seller mismatch loop by moving quality checks to doorstep pickup — reduced claims by 18%",
         ],
       },
       {
         title: "Senior Program Manager — E-commerce Growth",
         period: "Jul 2021 – Jan 2023",
         bullets: [
-          "Achieved 188% of GMV targets and 270% of assortment targets for the 3P marketplace launch, managing a team of 95",
-          "Grew fulfilment-centre business share from 2% to 17% through strategic management of 215 marquee sellers",
+          "Decided to front-load assortment investment in the 3P marketplace launch — delivered 188% of GMV targets and 270% of assortment targets, leading a team of 95",
+          "Grew fulfilment-centre business share from 2% to 17% — the insight was that seller quality, not volume, drove FC adoption; concentrated on 215 marquee sellers",
         ],
       },
     ],
@@ -71,8 +71,8 @@ const experience = [
         title: "Senior Consultant — Supply Chain",
         period: "2019 – 2021",
         bullets: [
-          "Delivered supply chain transformation projects for Fortune 500 clients across Europe and India",
-          "Led procurement strategy, spend analytics, and process re-engineering engagements",
+          "Led procurement and supply chain decisions for Fortune 500 clients across Europe and India — focused on spend analytics and process redesign",
+          "Advised on buy vs. build decisions, sourcing strategy, and supplier consolidation — outcomes measured in cost reduction and cycle time",
         ],
       },
     ],
@@ -126,7 +126,7 @@ export default function Experience() {
             Experience
           </p>
           <h2 className="font-[family-name:var(--font-playfair)] text-3xl lg:text-4xl font-bold text-[#1A1A1A]">
-            10 years of building & shipping
+            10 years of decisions that changed outcomes
           </h2>
         </motion.div>
 

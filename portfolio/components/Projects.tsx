@@ -20,43 +20,43 @@ type Project = {
 const projects: Project[] = [
   {
     name: "ScouterZero",
-    tagline: "AI career intelligence platform for PMs",
+    tagline: "Job search for PMs is broken — too much noise, zero signal",
     description:
-      "Scrapes thousands of PM job postings, runs AI filtering & summarization, and surfaces high-signal opportunities with direct recruiter contacts.",
+      "Most job boards flood candidates with irrelevant listings. I shipped a prototype to test whether AI filtering could surface only decision-ready opportunities — with recruiter contacts included. 6,945 PMs joined in 30 days.",
     image: "/projects/scouterzero.png",
-    tags: ["n8n", "Python", "LLM", "Web Scraping"],
+    tags: ["n8n", "Python", "Claude API", "Web Scraping"],
     stat: "6,945 PMs joined in 30 days · 104k visits",
     link: "https://scouterzero.com/",
     featured: true,
   },
   {
     name: "TradeDocs",
-    tagline: "International trade documentation platform",
+    tagline: "Cross-border compliance was costing weeks of manual work",
     description:
-      "AI-powered platform that parses complex legal and business documents across jurisdictions and automates compliant document generation.",
+      "International businesses lose weeks to manual document prep across jurisdictions. I shipped a prototype to validate whether AI could parse complex legal documents and generate compliant outputs automatically — in seconds, not days.",
     image: "/projects/tradedocs-dash.png",
-    tags: ["NLP", "Document Parsing", "LLM", "Compliance"],
-    stat: "Handles multi-jurisdiction docs in seconds",
+    tags: ["NLP", "Document Parsing", "Claude API", "Compliance"],
+    stat: "Multi-jurisdiction docs processed in seconds",
     link: "https://tradedocs.scouterzero.com",
     credentials: { user: "checker@demo.com", pass: "checker@1234" },
     featured: true,
   },
   {
     name: "FleetMind",
-    tagline: "Intelligent fleet & asset management system",
+    tagline: "600 trucks on the road — no real-time visibility into costs",
     description:
-      "Full-stack vehicle management system for a 600-truck fleet. Built solo in 6 weeks — AI pipelines extract data from fuel receipts and maintenance logs.",
+      "Cost leakages in a large fleet are invisible until month-end. I shipped a working prototype in 6 weeks — proved that AI could extract structured cost data from fuel receipts and maintenance logs, giving fleet managers real-time visibility for the first time.",
     image: "/projects/fleetmind.png",
     tags: ["AI Pipelines", "Python", "Django", "Automation"],
-    stat: "600-truck fleet managed · Shipped in 6 weeks",
+    stat: "600-truck fleet · Validated in 6 weeks",
     link: null,
     featured: true,
   },
   {
     name: "Content Ginie",
-    tagline: "E-commerce content automation at scale",
+    tagline: "Photoshoots were the bottleneck — expensive, slow, unscalable",
     description:
-      "Generative AI platform that converts raw product images into model-quality visuals. Reduced e-commerce shoot-to-live from 12 days to 7 days.",
+      "At Landmark Group, every new SKU needed a photoshoot with models and studios. I validated that generative AI could replace them entirely — cutting shoot-to-live from 12 days to 7 days across thousands of products without adding headcount.",
     image: null,
     images: [
       "/projects/contentginie-1.png",
@@ -70,20 +70,20 @@ const projects: Project[] = [
   },
   {
     name: "SpendZero",
-    tagline: "Privacy-first AI financial analyzer",
+    tagline: "Personal finance apps trade accuracy for your data",
     description:
-      "Built an LLM-based transaction categorization engine that pulls statements directly from Gmail — no third-party aggregators, full privacy.",
+      "Most finance tools require handing your data to third-party aggregators. I proved there is another way — 95%+ categorization accuracy using statements pulled directly from Gmail, with no data leaving your control.",
     image: "/projects/spendzero.png",
-    tags: ["LLMs", "Gmail API", "Python", "Data Pipelines"],
+    tags: ["Claude API", "Gmail API", "Python", "Data Pipelines"],
     stat: "95%+ categorization accuracy",
     link: null,
     featured: false,
   },
   {
     name: "LinkedIn Extension",
-    tagline: "Chrome extension for smarter LinkedIn outreach",
+    tagline: "LinkedIn prospecting is manual, repetitive, and slow",
     description:
-      "Browser extension that enhances LinkedIn workflows — built for recruiters and sales professionals to streamline prospecting and messaging.",
+      "Recruiters and sales professionals waste hours on repetitive LinkedIn workflows. I shipped a Chrome extension to test whether automating the repetitive parts could meaningfully cut prospecting time — published and live on the Chrome Web Store.",
     image: null,
     tags: ["Chrome Extension", "JavaScript", "LinkedIn API"],
     stat: "Published on Chrome Web Store",
@@ -150,7 +150,7 @@ export default function Projects() {
             Projects
           </p>
           <h2 className="font-[family-name:var(--font-playfair)] text-3xl lg:text-4xl font-bold text-[#1A1A1A]">
-            AI systems built & shipped
+            Problems validated, prototypes shipped
           </h2>
         </motion.div>
 

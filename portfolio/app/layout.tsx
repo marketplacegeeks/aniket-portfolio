@@ -15,13 +15,13 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Aniket Mehare — AI Product Leader",
+  title: "Aniket Mehare — PM who builds to validate",
   description:
-    "AI Product Leader & Builder with 10 years of experience. I ship AI systems that solve real operational problems — from fintech to e-commerce to fleet management.",
+    "Product Manager with 10+ years of experience. I ship working prototypes in 2–4 weeks to prove ideas before anyone commits resources to them.",
   openGraph: {
-    title: "Aniket Mehare — AI Product Leader who ships",
+    title: "Aniket Mehare — PM who builds to validate",
     description:
-      "Building AI-powered products at scale. AED 220M GMV, 104k visits/month, 6-week sprints.",
+      "I validate ideas by shipping them. $15M in cost savings. 104k visits in 30 days. Idea to working prototype in 2–4 weeks.",
     type: "website",
   },
 };
