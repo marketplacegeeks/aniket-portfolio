@@ -85,7 +85,7 @@ export default function Hero() {
                 LinkedIn ↗
               </a>
               <a
-                href="/Aniket-Mehare-CV.docx"
+                href="/Aniket-Mehare-CV.pdf"
                 download
                 className="px-6 py-3 bg-white border-2 border-[#C8D8D0] text-[#1A1A1A] font-semibold rounded-lg hover:border-[#2D7B69] hover:text-[#2D7B69] transition-all"
               >
