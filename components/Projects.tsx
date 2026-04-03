@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
+import { BarChart2, LayoutGrid } from "lucide-react";
 import Image from "next/image";
 import { useRef, useState } from "react";
 
@@ -205,7 +206,7 @@ export default function Projects() {
                   </p>
                   <div className="bg-[#E4EDE9] rounded-xl px-4 py-2.5 mb-4">
                     <span className="text-sm font-semibold text-[#2D7B69]">
-                      📊 {project.stat}
+                      <BarChart2 className="w-3.5 h-3.5 inline mr-1 -mt-0.5" />{project.stat}
                     </span>
                   </div>
                   {project.credentials && (
@@ -264,7 +265,7 @@ export default function Projects() {
                   </div>
                 ) : (
                   <div className="h-40 bg-gradient-to-br from-orange-50 to-amber-50 flex items-center justify-center shrink-0">
-                    <span className="text-4xl">🧩</span>
+                    <LayoutGrid className="w-12 h-12 text-[#C8D8D0]" />
                   </div>
                 )}
 
@@ -292,7 +293,7 @@ export default function Projects() {
                   </p>
                   <div className="bg-[#E4EDE9] rounded-lg px-3 py-2 mb-3">
                     <span className="text-xs font-semibold text-[#2D7B69]">
-                      📊 {project.stat}
+                      <BarChart2 className="w-3.5 h-3.5 inline mr-1 -mt-0.5" />{project.stat}
                     </span>
                   </div>
 

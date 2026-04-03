@@ -1,32 +1,33 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
+import { Brain, Compass, Zap, Rocket, type LucideIcon } from "lucide-react";
 import { useRef } from "react";
 
-const capabilities = [
+const capabilities: { icon: LucideIcon; title: string; description: string; tags: string[] }[] = [
   {
-    icon: "🧠",
+    icon: Brain,
     title: "AI Systems",
     description:
       "LLM-powered pipelines, document parsing, intelligent categorization engines, and agentic workflows that handle real production load.",
     tags: ["LLMs", "n8n", "Python", "Automation"],
   },
   {
-    icon: "🧭",
+    icon: Compass,
     title: "Product Strategy",
     description:
       "Marketplace growth, supply chain optimization, and 0→1 product launches. I define the roadmap and then build it.",
     tags: ["Roadmapping", "GTM", "Marketplace", "Operations"],
   },
   {
-    icon: "⚡",
+    icon: Zap,
     title: "Full-Stack Builds",
     description:
       "From Django backends to Supabase, Bolt.new scaffolding to Vercel deployments — end-to-end engineering without a team.",
     tags: ["Django", "Supabase", "Next.js", "Bolt.new"],
   },
   {
-    icon: "🚀",
+    icon: Rocket,
     title: "Fast Delivery",
     description:
       "Shipped a 600-truck fleet management system in 6 weeks. Launched a job portal to 104k visits in month one. Speed is a feature.",
@@ -66,7 +67,7 @@ export default function WhatIDo() {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.1 }}
             >
-              <div className="text-3xl mb-4">{cap.icon}</div>
+              <cap.icon className="w-8 h-8 text-[#2D7B69] mb-4" />
               <h3 className="text-xl font-bold text-[#1A1A1A] mb-2 group-hover:text-[#2D7B69] transition-colors">
                 {cap.title}
               </h3>

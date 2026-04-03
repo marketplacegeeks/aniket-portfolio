@@ -1,32 +1,33 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
+import { Brain, Settings2, Wrench, Monitor, Package, type LucideIcon } from "lucide-react";
 import { useRef } from "react";
 
-const skills = [
+const skills: { category: string; icon: LucideIcon; items: string[] }[] = [
   {
     category: "How I reason with AI",
-    icon: "🧠",
+    icon: Brain,
     items: ["Claude API", "OpenAI", "RAG Pipelines", "Prompt Engineering", "Evals", "Vector DBs", "Agentic Workflows", "Multi-step Reasoning Chains"],
   },
   {
     category: "How I automate workflows",
-    icon: "⚙️",
+    icon: Settings2,
     items: ["n8n", "Playwright", "Selenium", "Web Scraping at Scale", "Event-driven Pipelines", "AI-to-AI Orchestration"],
   },
   {
     category: "How I wire up the backend",
-    icon: "🛠️",
+    icon: Wrench,
     items: ["Python", "Django", "FastAPI", "PostgreSQL", "Supabase", "REST APIs", "PDF Generation", "Document Parsing", "Gmail API"],
   },
   {
     category: "How I get it in front of users",
-    icon: "💻",
+    icon: Monitor,
     items: ["React", "Next.js", "Chrome Extensions", "Vercel", "Railway", "Tailwind CSS"],
   },
   {
     category: "How I decide what to build",
-    icon: "📦",
+    icon: Package,
     items: ["0→1 Product Launches", "Marketplace Strategy", "Roadmapping", "GTM", "Stakeholder Management", "Enterprise Delivery"],
   },
 ];
@@ -62,7 +63,7 @@ export default function Skills() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
             >
               <div className="flex items-center gap-2 mb-4">
-                <span className="text-xl">{group.icon}</span>
+                <group.icon className="w-5 h-5 text-[#2D7B69] shrink-0" />
                 <h3 className="text-sm font-bold text-[#1A1A1A]">
                   {group.category}
                 </h3>

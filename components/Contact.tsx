@@ -1,32 +1,33 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
+import { Mail, Briefcase, MessageCircle, GitBranch, Calendar, type LucideIcon } from "lucide-react";
 import { useRef } from "react";
 
-const links = [
+const links: { label: string; value: string; href: string; icon: LucideIcon }[] = [
   {
     label: "Email",
     value: "mehareac@gmail.com",
     href: "mailto:mehareac@gmail.com",
-    icon: "✉️",
+    icon: Mail,
   },
   {
     label: "LinkedIn",
     value: "linkedin.com/in/aniketmehare",
     href: "https://www.linkedin.com/in/aniketmehare/",
-    icon: "💼",
+    icon: Briefcase,
   },
   {
     label: "WhatsApp",
     value: "+971 52 761 4518",
     href: "https://wa.me/971527614518",
-    icon: "💬",
+    icon: MessageCircle,
   },
   {
     label: "GitHub",
     value: "github.com/marketplacegeeks",
     href: "https://github.com/marketplacegeeks",
-    icon: "🐙",
+    icon: GitBranch,
   },
 ];
 
@@ -62,7 +63,7 @@ export default function Contact() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2.5 px-7 py-3.5 bg-[#2D7B69] text-white font-semibold rounded-lg hover:bg-[#245F52] transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 mb-12"
           >
-            <span>📅</span>
+            <Calendar className="w-4 h-4" />
             Book a Call
           </a>
         </motion.div>
@@ -79,7 +80,7 @@ export default function Contact() {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.08 }}
             >
-              <div className="text-2xl mb-3">{link.icon}</div>
+              <link.icon className="w-6 h-6 text-[#2D7B69] mb-3" />
               <div className="text-sm font-semibold text-[#1A1A1A] mb-1 group-hover:text-[#2D7B69] transition-colors">
                 {link.label}
               </div>
