@@ -47,7 +47,7 @@ export async function POST(request: NextRequest) {
 
     console.log("✅ Email sent successfully:", result);
 
-    return NextResponse.json({ success: true, emailId: result.id });
+    return NextResponse.json({ success: true, emailId: result.data?.id });
   } catch (error) {
     console.error("❌ Download tracking error:", error);
     return NextResponse.json(
