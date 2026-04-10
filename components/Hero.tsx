@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useState } from "react";
+import DownloadModal from "./DownloadModal";
 
 const stats = [
   { value: "$15M", label: "in validated cost savings" },
@@ -10,6 +12,24 @@ const stats = [
 ];
 
 export default function Hero() {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [downloadType, setDownloadType] = useState<"cv" | "portfolio">("cv");
+
+  const handleDownloadClick = (type: "cv" | "portfolio") => {
+    setDownloadType(type);
+    setModalOpen(true);
+  };
+
+  const handleDownloadSuccess = () => {
+    // Trigger actual download
+    const link = document.createElement("a");
+    link.href =
+      downloadType === "cv"
+        ? "/Aniket-Mehare-CV.pdf"
+        : "/Aniket-Mehare-Portfolio.pdf";
+    link.download = "";
+    link.click();
+  };
   return (
     <section className="flex items-center pt-20 pb-10 px-6 bg-[#EEF2EE]">
       <div className="max-w-6xl mx-auto w-full">
@@ -84,20 +104,18 @@ export default function Hero() {
               >
                 LinkedIn ↗
               </a>
-              <a
-                href="/Aniket-Mehare-CV.pdf"
-                download
+              <button
+                onClick={() => handleDownloadClick("cv")}
                 className="px-6 py-3 bg-white border-2 border-[#C8D8D0] text-[#1A1A1A] font-semibold rounded-lg hover:border-[#2D7B69] hover:text-[#2D7B69] transition-all"
               >
                 ↓ Download CV
-              </a>
-              <a
-                href="/Aniket-Mehare-Portfolio.pdf"
-                download
+              </button>
+              <button
+                onClick={() => handleDownloadClick("portfolio")}
                 className="px-6 py-3 bg-white border-2 border-[#C8D8D0] text-[#1A1A1A] font-semibold rounded-lg hover:border-[#2D7B69] hover:text-[#2D7B69] transition-all"
               >
                 ↓ Download Portfolio
-              </a>
+              </button>
               <a
                 href="mailto:mehareac@gmail.com"
                 className="px-6 py-3 bg-white border-2 border-[#C8D8D0] text-[#1A1A1A] font-semibold rounded-lg hover:border-[#2D7B69] hover:text-[#2D7B69] transition-all"
@@ -168,6 +186,14 @@ export default function Hero() {
           </div>
         </motion.div>
       </div>
+
+      {/* Download Modal */}
+      <DownloadModal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        downloadType={downloadType}
+        onSuccess={handleDownloadSuccess}
+      />
     </section>
   );
 }
