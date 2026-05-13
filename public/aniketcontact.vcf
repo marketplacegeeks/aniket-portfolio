@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Mehare;Aniket;;;
+FN:Aniket Mehare
+ORG:Landmark Group
+TITLE:Lead Product Manager
+TEL;TYPE=WORK,VOICE:+971527614518
+TEL;TYPE=CELL,VOICE:+919403052811
+EMAIL;TYPE=WORK,INTERNET:aniket.mehare@landmarkgroup.com
+EMAIL;TYPE=HOME,INTERNET:mehareac@gmail.com
+URL:https://aniketm.vercel.app/
+ADR;TYPE=WORK,POSTAL:;;Dubai;;;UAE;
+END:VCARD
