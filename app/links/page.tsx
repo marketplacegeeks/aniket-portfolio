@@ -52,6 +52,27 @@ const socials = [
   },
 ];
 
+const VCARD = `BEGIN:VCARD\r\nVERSION:3.0\r\nN:Mehare;Aniket;;;\r\nFN:Aniket Mehare\r\nORG:Landmark Group\r\nTITLE:Lead Product Manager\r\nTEL;TYPE=WORK,VOICE:+971527614518\r\nTEL;TYPE=CELL,VOICE:+919403052811\r\nEMAIL;TYPE=WORK,INTERNET:aniket.mehare@landmarkgroup.com\r\nEMAIL;TYPE=HOME,INTERNET:mehareac@gmail.com\r\nURL:https://aniketm.vercel.app/\r\nADR;TYPE=WORK,POSTAL:;;Dubai;;;UAE;\r\nEND:VCARD`;
+
+function saveContact() {
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+  if (isIOS) {
+    // iOS Safari opens text/vcard directly in Contacts
+    window.location.href = "/contact";
+  } else {
+    // Android/other: direct blob download — one step
+    const blob = new Blob([VCARD], { type: "text/vcard" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "aniket.vcf";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+}
+
 export default function LinksPage() {
   return (
     <>
@@ -177,13 +198,13 @@ export default function LinksPage() {
         </div>
 
         {/* Save Contact */}
-        <a
-          href="/contact"
+        <button
+          onClick={saveContact}
           className="flex items-center justify-center gap-3 w-full max-w-sm mx-auto px-5 py-4 rounded-2xl font-bold text-sm shadow-lg bg-[#C2570A] text-white hover:bg-[#A84809] active:scale-95 transition-all"
         >
           <FaAddressCard className="text-lg" />
           Save Contact
-        </a>
+        </button>
       </motion.div>
     </>
   );
